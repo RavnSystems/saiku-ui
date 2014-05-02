@@ -103,7 +103,7 @@ var Repository = Backbone.Collection.extend({
     },
     
     url: function() {
-        var segment = repoPathUrl() + "?type=saiku";
+        var segment = repoPathUrl() + "?type=query";
         return encodeURI(Saiku.session.username + segment);
     }
 });

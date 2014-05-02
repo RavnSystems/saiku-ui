@@ -222,7 +222,7 @@ var SaveQuery = Modal.extend({
         var self = this;
         var folder = this.query.get('folder');
         var file = this.query.get('name');
-        file = file.length > 6 && file.indexOf(".saiku") == file.length - 6 ? file : file + ".saiku";
+        file = file.length > 6 && file.indexOf(".query") == file.length - 6 ? file : file + ".query";
         file = folder + file;
         var error = function(data, textStatus, jqXHR) {
                 if (textStatus && textStatus.status == 403 && textStatus.responseText) {
